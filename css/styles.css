@@ -329,7 +329,6 @@ body {
 }
 .member-name {
   padding-bottom: 10px;
-
   font-size: 16px;
   font-weight: 500;
   line-height: 1.188;
@@ -361,11 +360,21 @@ body {
   height: 44px;
   border-radius: 50%;
 }
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.social-item:hover {
+  background-color: var(--accent-cl);
+}
 .social-icon {
   fill: var(--icon-cl);
 }
-.social-link {
-}
+
 .social-icon:hover,
 .social-icon:focus {
   fill: var(--white);
@@ -449,11 +458,9 @@ body {
 .adress {
   display: block;
   padding-bottom: 9px;
-
   color: var(--white);
   font-style: normal;
 }
-
 .connect {
   margin-bottom: 20px;
   font-size: 14px;
@@ -464,6 +471,9 @@ body {
 }
 .social-item.gray-bg {
   background-color: rgba(255, 255, 255, 0.1);
+}
+.social-item.gray-bg:hover {
+  background-color: var(--accent-cl);
 }
 /* Портфолио */
 .portfolio-section {
