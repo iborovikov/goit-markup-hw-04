@@ -150,6 +150,8 @@ body {
   font-family: inherit;
   font-size: 16px;
   text-align: center;
+  border: none;
+  border-radius: 4px;
 }
 
 /* Шапка */
@@ -171,12 +173,20 @@ body {
   margin-right: 50px;
 }
 .header-contacts {
+  display: flex;
   margin-left: auto;
+}
+.header-contacts .link {
+  display: inline-flex;
+  align-items: center;
 }
 .header-contacts .item:not(:last-child) {
   margin-right: 50px;
 }
-
+.icon-link {
+  display: flex;
+  align-items: center;
+}
 .mail-icon {
   width: 16px;
   height: 12px;
@@ -185,8 +195,8 @@ body {
 }
 
 .phone-icon {
-  width: 16px;
-  height: 12px;
+  width: 10px;
+  height: 16px;
   margin-right: 10px;
   fill: currentColor;
 }
@@ -222,6 +232,10 @@ body {
   background-color: var(--accent-cl);
   letter-spacing: 0.06em;
   color: var(--white);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 32px;
+  padding-left: 32px;
 }
 
 /* Преимущества */
@@ -232,7 +246,7 @@ body {
 }
 .benefits-list .item {
 }
-.benefits-list .antena-icon::before {
+.benefits-list .antena-icon:before {
   content: '';
   display: block;
   width: 270px;
@@ -240,7 +254,7 @@ body {
   margin-bottom: 30px;
   background-image: url(../images/antenna.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+
   background-position: center;
   background-color: var(--lite-bg);
 }
@@ -253,7 +267,7 @@ body {
   margin-bottom: 30px;
   background-image: url(../images/clock.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+
   background-position: center;
   background-color: var(--lite-bg);
 }
@@ -266,7 +280,7 @@ body {
   margin-bottom: 30px;
   background-image: url(../images/diagram.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+
   background-position: center;
   background-color: var(--lite-bg);
 }
@@ -279,7 +293,7 @@ body {
   margin-bottom: 30px;
   background-image: url(../images/astronaut.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+
   background-position: center;
   background-color: var(--lite-bg);
 }
@@ -320,6 +334,7 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background-color: var(--white);
 }
 .members-list .item:not(:last-child) {
   margin-right: 30px;
@@ -499,7 +514,12 @@ body {
   line-height: 1.62;
   letter-spacing: inherit;
   color: var(--black);
-  background: #f5f4fa;
+  background: var(--lite-bg);
+
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 22px;
+  padding-left: 22px;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
