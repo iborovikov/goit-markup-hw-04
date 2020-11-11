@@ -218,7 +218,7 @@ body {
   padding-bottom: 200px;
 }
 .page-title {
-  padding-bottom: 45px;
+  margin-bottom: 45px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364;
@@ -515,7 +515,7 @@ body {
   letter-spacing: inherit;
   color: var(--black);
   background: var(--lite-bg);
-
+  max-width: 500px;
   padding-top: 6px;
   padding-bottom: 6px;
   padding-right: 22px;
